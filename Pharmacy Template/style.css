@@ -1,0 +1,314 @@
+/*start common css*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+div {
+    outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    position: relative;
+}
+
+/*end common css*/
+
+/*Menu bg change & position fixed*/
+.full_menu.position-fixed {
+    z-index: 9999;
+    width: 100%;
+}
+
+.full_menu.position-fixed {
+    top: 0;
+    left: 0;
+    background-color: #39BAF0;
+    color: #fff;
+    z-index: 999;
+    transition: linear all 0.3s;
+}
+
+/*End Menu bg change & position fixed*/
+
+/*start Scroll up part*/
+.arrow {
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+}
+
+.arrow a {
+    text-decoration: none;
+}
+
+.arrow a i {
+    font-size: 22px;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    background: #39BAF0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.arrow a i:hover {
+    background: #063B5B;
+    transition: .5s;
+}
+
+/*End Scroll up part*/
+
+/*Start main css parts*/
+
+/*Start Main Menu*/
+.headerarea img {
+    height: 35px;
+    width: 150px;
+}
+
+.navbar {
+    background-color: #39BAF0 !important;
+}
+
+.collapse ul li a {
+    font-weight: 500 !important;
+    color: #FFFFFF !important;
+}
+
+.collapse ul li a:hover {
+    color: #063B5B !important;
+    transition: linear all .8s;
+    padding: 0px;
+    
+}
+
+/*End Main Menu*/
+/*Start Slder area part*/
+.carousel-indicators li {
+    height: 20px !important;
+    border-radius: 30px;
+}
+
+.carousel-indicators .active {
+    background-color: #39BAF0 !important;
+}
+
+/*End Slder area part*/
+
+/*start About us part*/
+.title {
+    text-align: center;
+    margin: 50px 0px 70px 0px;
+}
+
+.title h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #3e3e3e;
+    position: relative;
+}
+
+.title h2:before {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 100px;
+    background: #39BAF0;
+    left: 51%;
+    bottom: -35%;
+}
+
+.title h2:after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 100px;
+    background: #063B5B;
+    left: 41%;
+    bottom: -35%;
+}
+/*End About us part*/
+/*Start Team Part*/
+#full_team{
+    padding-top: 50px;
+}
+.team_slick{
+    padding-top: 20px;
+    position: relative;
+}
+.team{
+    position: relative;
+    margin-top: 80px;
+    transition: all 0.3s linear;
+    margin-bottom: 100px;
+}
+.team img{
+    border-radius:15px 15px 0 0;
+}
+
+.team_overlay_icon{
+    position: absolute;
+    top: 50%;
+    left: 46%;
+transform: translate(-50%,-50%);
+}
+.team_overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.69);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    transition: all 0.3s linear;
+    opacity: 0;
+    border-radius:  15px  15px 0 0 ;
+}
+.team_overlay_icon ul li{
+    display: inline-block;
+}
+.team_overlay_icon ul li a{
+     width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+}
+
+.team_text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 29px 0;
+    height: 180px;
+    z-index: 0;
+    opacity: 0;
+    visibility: hidden;
+    border: 1px solid #ccc;
+    border-radius: 0 0 15px 15px;
+    transition: all 0.3s linear;
+    width: 100%;
+}
+.team:hover{
+    margin-top: 0;
+}
+.team:hover .team_overlay{
+    opacity: 1;
+}
+.team:hover .team_text{
+     transform: translateY(100%);
+    visibility: visible;
+    opacity: 1
+}
+/*End of team part*/
+/*Start Product Part*/
+.title_Second {
+    text-align: center;
+    margin: 50px 0px 20px 0px;
+}
+
+.title_Second h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #3e3e3e;
+    position: relative;
+}
+
+.title_Second h2:before {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 120px;
+    background: #39BAF0;
+    left: 51%;
+    bottom: -35%;
+}
+
+.title_Second h2:after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 120px;
+    background: #063B5B;
+    left: 38%;
+    bottom: -35%;
+}
+/*End Product us part*/
+/*Start Search Area Part*/
+.SearchArea {
+margin: 50px 0px;
+}
+
+.SearchArea input[type=text] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #39BAF0;
+}
+
+.SearchArea button {
+    padding: 11px 4%;
+    background-color: #39BAF0;
+    border: none;
+    outline: none;
+}
+
+.SearchArea button:hover {
+    background-color: #063B5B !important;
+    transition: linear all .8s;
+}
+
+.SearchArea button i {
+    color: #FFFFFF;
+}
+
+/*End Search Area Part*/
+
+/*End main css parts*/
