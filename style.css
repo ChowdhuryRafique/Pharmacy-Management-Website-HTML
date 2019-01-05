@@ -1,0 +1,580 @@
+/*start common css*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+div {
+    outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    position: relative;
+}
+
+/*end common css*/
+
+/*Menu bg change & position fixed*/
+.full_menu.position-fixed {
+    z-index: 9999;
+    width: 100%;
+}
+
+.full_menu.position-fixed {
+    top: 0;
+    left: 0;
+    background-color: #39BAF0;
+    color: #fff;
+    z-index: 999;
+    transition: linear all 0.3s;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+}
+
+/*End Menu bg change & position fixed*/
+
+/*start Scroll up part*/
+.arrow {
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+}
+
+.arrow a {
+    text-decoration: none;
+}
+
+.arrow a i {
+    font-size: 22px;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    background: #39BAF0;
+    text-align: center;
+}
+
+.arrow a i:hover {
+    background: #063B5B;
+    transition: .5s;
+}
+
+/*End Scroll up part*/
+
+/*Start main css parts*/
+
+/*Start Main Menu*/
+.headerarea img {
+    height: 35px;
+    width: 150px;
+}
+
+.navbar {
+    background-color: #39BAF0 !important;
+}
+
+.collapse ul li a {
+    font-weight: 500 !important;
+    color: #FFFFFF !important;
+}
+
+.collapse ul li a:hover {
+    color: #063B5B !important;
+    transition: linear all .8s;
+}
+
+/*End Main Menu*/
+/*Start Slder area part*/
+.carousel-indicators li {
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: #39BAF0 !important;
+}
+
+/*End Slder area part*/
+
+/*start About us part*/
+.title {
+    text-align: center;
+    margin: 50px 0px 70px 0px;
+}
+
+.title h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #3e3e3e;
+    position: relative;
+}
+
+.title h2:before {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 100px;
+    background: #39BAF0;
+    left: 51%;
+    bottom: -35%;
+}
+
+.title h2:after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 100px;
+    background: #063B5B;
+    left: 41%;
+    bottom: -35%;
+}
+
+/*End About us part*/
+/*Start Team Part*/
+#full_team {
+    padding-top: 50px;
+}
+
+.team_slick {
+    padding-top: 20px;
+    position: relative;
+}
+
+.team {
+    position: relative;
+    margin-top: 80px;
+    transition: all 0.3s linear;
+    margin-bottom: 100px;
+}
+
+.team img {
+    border-radius: 15px 15px 0 0;
+}
+
+.team_overlay_icon {
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+}
+
+.team_overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.69);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    transition: all 0.3s linear;
+    opacity: 0;
+    border-radius: 15px 15px 0 0;
+}
+
+.team_overlay_icon ul li {
+    display: inline-block;
+}
+
+.team_overlay_icon ul li a {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+}
+
+.team_text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 29px 0;
+    height: 180px;
+    z-index: 0;
+    opacity: 0;
+    visibility: hidden;
+    border: 1px solid #ccc;
+    border-radius: 0 0 15px 15px;
+    transition: all 0.3s linear;
+    width: 100%;
+}
+
+.team:hover {
+    margin-top: 0;
+}
+
+.team:hover .team_overlay {
+    opacity: 1;
+}
+
+.team:hover .team_text {
+    transform: translateY(100%);
+    visibility: visible;
+    opacity: 1
+}
+
+/*End of team part*/
+/*Start Product Part*/
+.title_Second {
+    text-align: center;
+    margin: 50px 0px 20px 0px;
+}
+
+.title_Second h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #3e3e3e;
+    position: relative;
+}
+
+.title_Second h2:before {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 120px;
+    background: #39BAF0;
+    left: 51%;
+    bottom: -35%;
+}
+
+.title_Second h2:after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 120px;
+    background: #063B5B;
+    left: 38%;
+    bottom: -35%;
+}
+
+/*End Product us part*/
+/*Start Search Area Part*/
+.SearchArea {
+    margin: 50px 0px;
+}
+
+.SearchArea input[type=text] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #39BAF0;
+}
+
+.SearchArea button {
+    padding: 11px 4%;
+    background-color: #39BAF0;
+    border: none;
+    outline: none;
+}
+
+.SearchArea button:hover {
+    background-color: #063B5B !important;
+    transition: linear all .8s;
+}
+
+.SearchArea button i {
+    color: #FFFFFF;
+}
+
+/*End Search Area Part*/
+/*Start product area*/
+.product_area {
+    background: #F3F1F2;
+    padding: 0px 0px 50px 0px;
+}
+
+.product {
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(207,205,207,1);
+-moz-box-shadow: 0px 5px 10px 2px rgba(207,205,207,1);
+box-shadow: 0px 5px 10px 2px rgba(207,205,207,1);
+}
+
+.product_top {
+    position: relative;
+    margin-top: 50px;
+}
+
+.product_top img {
+    width: 100%;
+    display: block;
+    border-bottom: 3px solid #39BAF0;
+}
+
+
+.price_product {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 20px;
+    background-color: #39BAF0;
+}
+
+.product_hover {
+    position: absolute;
+    transform: scale(0);
+    padding-top: 60px;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(149, 100, 149, .5);
+}
+
+.product_top:hover .product_hover {
+    transform: scale(1);
+    transition: 1s;
+
+}
+
+.product_bottom {
+    padding-bottom: 20px;
+}
+
+.rattting i {
+    color: white;
+}
+
+.product_bottom {
+    text-align: center;
+    background: white;
+    border: 1px solid gray;
+}
+
+.product_bottom h3 {
+    padding: 20px 10px 20px 0px;
+}
+
+.product_title {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.product_title button {
+    background: #39BAF0;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: initial !important;
+
+    user-select: none !important;
+    border: none !important;
+    padding: .375rem .75rem;
+    font-size: 15px;
+
+    border-radius: 0;
+    transition: none !important;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: 22px !important;
+}
+
+.product_title button:hover {
+    background: #063B5B;
+    transition: .5s;
+}
+
+.ShowMore {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.ShowMore button {
+    background-color: #39BAF0;
+    color: #fff;
+    padding: 6px 20px;
+    border: none;
+}
+
+.ShowMore button:hover {
+    background: #063B5B;
+    transition: .5s;
+    outline: none;
+}
+
+/*Start image show*/
+.imageShow {
+    margin: 50px 0px;
+}
+
+.leftImage {
+    background-image: url("img/homopathics.png");
+    height: 200px;
+    cursor: pointer;
+    position: relative;
+}
+
+.RightImage {
+    background-image: url("img/surgical.png");
+    height: 200px;
+    cursor: pointer;
+    position: relative;
+}
+
+.imageHover {
+    position: absolute;
+    transform: scale(0);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 1px solid white;
+    background-color: rgba(149, 100, 149, .5);
+}
+
+.leftImage:hover .imageHover {
+    transform: scale(1);
+    transition: 1s;
+}
+
+.RightImage:hover .imageHover{
+    transform: scale(1);
+    transition: 1s;
+}
+
+/*End image show*/
+/*Start Contact us Area*/
+.footerAREA {
+    background-image: url("img/footerIMG.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 50px 0px;
+}
+
+.footerHEADER h1 {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+.lEFTside h1 {
+    color: white;
+    font-size: 30px;
+}
+
+.lEFTside p {
+    color: white !important;
+    text-transform: capitalize !important;
+}
+
+.colorTEXT p {
+    color: #fff !important;
+}
+
+.lEFTside i {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 8px;
+    text-align: center;
+    margin-right: 10px !important;
+    margin: 15px 0px;
+    cursor: pointer;
+}
+
+.lEFTside i:hover {
+    background-color: #49CBCD;
+    transition: .5s;
+}
+
+.RIGHTside input {
+    margin-bottom: 20px;
+}
+
+.RIGHTside input,
+textarea {
+    width: 100%;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+}
+
+.RIGHTside button {
+    float: right;
+    margin-top: 10px;
+    background-color: #49CBCD;
+    border: none;
+    padding: 8px 20px;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    outline: none;
+}
+
+.RIGHTside button:hover {
+    background-color: white;
+    border: 1px solid #49CBCD;
+    color: black;
+    transition: .5s;
+    outline: none;
+}
+
+/*End Contact us Area*/
+
+/*End main css parts*/
